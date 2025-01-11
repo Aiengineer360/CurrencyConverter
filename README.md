@@ -63,35 +63,12 @@ The Gradio interface was launched in Google Colab using the interface.launch() c
 Challenges Encountered
 
 1. RapidAPI Configuration Issues
-
-Problem: The API key and host were sometimes misconfigured, resulting in authentication errors.
-
-Solution: Careful verification of the API key and headers ensured successful API requests.
-
 2. Handling Invalid Currency Codes
-
-Problem: If users entered unsupported or invalid currency codes, the API returned errors or empty results.
-
-Solution: The response was validated to check for missing or invalid data, and appropriate error messages were displayed to the user.
-
 3. Network and Connectivity Errors
-
-Problem: Occasional network disruptions caused request timeouts or failed API calls.
-
-Solution: Exception handling was added using requests.exceptions.RequestException to display user-friendly error messages during such events.
-
 4. Limited Currency List
-
-Problem: Initially, only a limited set of currency codes was supported, restricting the tool’s usability.
-
-Solution: The list of supported currencies was expanded to include all ISO 4217 currency codes, ensuring greater flexibility.
-
 5. Interface Display in Google Colab
-
-Problem: The Gradio interface did not display directly in Google Colab.
-
-Solution: Adding the share=True parameter during interface launch resolved the issue by providing a public link to access the interface.
-
+6. 
 Conclusion
 
 The currency converter project successfully demonstrates how to integrate RapidAPI with Gradio to create an intuitive and functional application. Despite encountering challenges such as API configuration issues, error handling, and interface accessibility, each problem was systematically addressed, resulting in a robust and user-friendly tool. This project provides a strong foundation for further enhancements, such as dynamic currency code fetching and historical conversion rates.
+
